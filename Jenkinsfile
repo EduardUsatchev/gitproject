@@ -8,7 +8,6 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/EduardUsatchev/gitproject.git'
             }
         }
-    stages {
         stage('Run Python') {
             steps {
                 sh 'python main.py'
